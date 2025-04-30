@@ -8,6 +8,8 @@
 
 <div dir="rtl">
 
+![Screenshot 2025-04-30 112732](https://github.com/user-attachments/assets/feaa9154-592c-4996-b0c7-e2b9aeb0e1a6)
+
 ## معرفی
 
 این پروژه یک فرم چند مرحله‌ای (Multi-Step Form) با پشتیبانی کامل از راست به چپ (RTL) برای زبان فارسی است. پروژه با استفاده از React و TypeScript ساخته شده و از فونت وزیر برای نمایش متن فارسی استفاده می‌کند.
