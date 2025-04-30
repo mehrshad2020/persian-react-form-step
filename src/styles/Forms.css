@@ -1,0 +1,247 @@
+.form {
+  margin-top: 24px;
+  text-align: right;
+}
+
+.form-group {
+  margin-bottom: 24px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #d0d0f0;
+  text-align: right;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px 16px;
+  background-color: #181870;
+  border: 1px solid #3b3b9a;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  font-family: 'Vazirmatn', sans-serif;
+  text-align: right;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #10b981;
+  box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.1);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #6b6bc0;
+  text-align: right;
+}
+
+/* Services styles */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 16px;
+  direction: rtl;
+}
+
+.service-option {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  background-color: #181870;
+  border: 1px solid #3b3b9a;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.service-option:hover {
+  background-color: #22227b;
+}
+
+.service-option.selected {
+  border-color: #10b981;
+  background-color: rgba(16, 185, 129, 0.1);
+}
+
+.service-checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #2c2c8c;
+  color: #10b981;
+  margin-left: 8px;
+  margin-right: 0;
+}
+
+.service-checkbox svg {
+  width: 24px;
+  height: 24px;
+}
+
+/* Budget styles */
+.budget-options {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.budget-option {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+  background-color: #181870;
+  border: 1px solid #3b3b9a;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.budget-option:hover {
+  background-color: #22227b;
+}
+
+.budget-option.selected {
+  border-color: #10b981;
+  background-color: rgba(16, 185, 129, 0.1);
+}
+
+.budget-option-content h3 {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0 0 4px 0;
+  text-align: right;
+}
+
+.budget-option-content p {
+  font-size: 14px;
+  color: #a0a0c9;
+  margin: 0;
+  text-align: right;
+}
+
+.budget-radio {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 2px solid #3b3b9a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 8px;
+  margin-left: 0;
+}
+
+.budget-option.selected .budget-radio {
+  border-color: #10b981;
+}
+
+.radio-selected {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #10b981;
+}
+
+/* Complete step styles */
+.complete-step {
+  text-align: center;
+}
+
+.success-message {
+  margin-top: 32px;
+  padding: 24px;
+  background-color: rgba(16, 185, 129, 0.1);
+  border-radius: 8px;
+  text-align: center;
+}
+
+.success-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: #10b981;
+  color: white;
+  margin-bottom: 16px;
+}
+
+.success-icon svg {
+  width: 28px;
+  height: 28px;
+}
+
+.success-message h3 {
+  font-size: 20px;
+  margin: 0 0 8px 0;
+}
+
+.success-message p {
+  color: #a0a0c9;
+  margin: 0;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .services-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .form-group input,
+  .form-group textarea {
+    padding: 10px 14px;
+    font-size: 14px;
+  }
+  
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .budget-option-content h3 {
+    font-size: 16px;
+  }
+  
+  .budget-option-content p {
+    font-size: 12px;
+  }
+  
+  .success-message {
+    padding: 16px;
+  }
+  
+  .success-icon {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .success-icon svg {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .success-message h3 {
+    font-size: 18px;
+  }
+  
+  .success-message p {
+    font-size: 14px;
+  }
+} 
